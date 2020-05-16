@@ -1,0 +1,63 @@
+.text-field
+{
+	-fx-background-color:#ffffff;
+}
+.text-field:focused
+{
+-fx-border-width:2px;
+-fx-border-color:#9f97bd;  
+}
+.text-field:pressed
+{
+-fx-border-width:2px;
+-fx-border-color: #9f97bd;  
+}
+
+.password-field:focused
+{
+-fx-border-width: 2px;
+-fx-border-color: #9f97bd;  
+}
+
+.button
+{
+ -fx-background-color:#50546D;
+ -fx-border-color:#404354;
+ -fx-focus-color:#0C39FF;
+}
+
+.button:hover
+{
+-fx-background-color: #0C39FF	
+}
+#lblclose
+{
+	-fx-text-fill: #50546D;
+}
+#lblclose:hover
+{
+	-fx-text-fill: red;
+}
+.text-area
+{
+-fx-background-color: #fff, #fff;
+}
+
+.text-area .content 
+{
+-fx-background-color: #fff;
+}
+
+.text-area:focused 
+{
+-fx-border-width: 2px;
+-fx-border-color: #9f97bd;
+}
+#lblerror
+{
+   -fx-text-fill: red;	
+}
+#lblclose:hover
+{
+	-fx-text-fill:red;
+}
