@@ -1,25 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="921.0" prefWidth="1206.0" style="-fx-background-color: #f3eff5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="652.0" prefWidth="930.0" style="-fx-background-color: #f3eff5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane layoutX="8.0" prefHeight="25.0" prefWidth="773.0" style="-fx-background-color: #9f97bd;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <StackPane prefHeight="47.0" prefWidth="813.0" style="-fx-background-color: #9f97bd;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <TextField id="searchbox" layoutX="829.0" layoutY="11.0" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" opacity="0.9" prefHeight="26.0" prefWidth="369.0" promptText="Search for your hardware..." stylesheets="@../StyleSheets/UIstyling.css" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="11.0" />
-            <ImageView fitHeight="47.0" fitWidth="89.0" layoutX="514.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="530.0" AnchorPane.rightAnchor="603.0" AnchorPane.topAnchor="0.0">
+            <ImageView fitHeight="47.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Pictures/Logo.PNG" />
                </image>
-               <effect>
-                  <Glow level="0.54" />
-               </effect>
             </ImageView>
          </children>
+      </StackPane>
+      <AnchorPane layoutX="607.0" layoutY="-1.0" prefHeight="47.0" prefWidth="813.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="886.0" layoutY="9.0" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="9.0">
+               <image>
+                  <Image url="@../Pictures/shopping_cart_30px.png" />
+               </image>
+            </ImageView>
+            <TextField id="searchbox" layoutX="14.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="386.0" promptText="Search for hardware..." stylesheets="@../StyleSheets/UIstyling.css" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="9.0" />
+            <ComboBox layoutX="489.0" layoutY="10.0" prefHeight="29.0" prefWidth="283.0" promptText="Choose category" style="-fx-background-color: #d4d0e1;" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="94.0" AnchorPane.topAnchor="9.0" />
+            <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="850.0" layoutY="10.0" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="9.0">
+               <image>
+                  <Image url="@../Pictures/male_user_50px.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="893.0" layoutY="14.0" prefHeight="17.0" prefWidth="20.0" text="0" textFill="WHITE" AnchorPane.bottomAnchor="16.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="Impact" size="10.0" />
+               </font>
+            </Label>
+         </children>
       </AnchorPane>
+      <ScrollPane layoutX="-6.0" layoutY="47.0" prefHeight="536.0" prefWidth="978.0" style="-fx-background-color: #9f97bd;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0" />
    </children>
 </AnchorPane>

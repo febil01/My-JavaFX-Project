@@ -45,6 +45,8 @@ signupStage.setScene(signup);
 homeStage.setScene(home);
 
 homeStage.setMaximized(true);
+homeStage.setMinWidth(900);
+homeStage.setMinHeight(900);
 
 login.setOnMousePressed(new EventHandler<MouseEvent>() {
 @Override

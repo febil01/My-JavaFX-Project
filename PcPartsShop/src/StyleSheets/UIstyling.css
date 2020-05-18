@@ -20,7 +20,8 @@
 }
 #searchbox
 {
-	-fx-background-color: #f3eff5;
+	-fx-prompt-text-fill: black;
+	-fx-background-color: #d4d0e1;
 }
 #searchbox:focused{
 	-fx-border-color:#50546D;
