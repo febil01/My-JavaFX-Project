@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaApplication.HomeController">
-	<!-- TODO Add Nodes -->
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="921.0" prefWidth="1206.0" style="-fx-background-color: #f3eff5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="8.0" prefHeight="25.0" prefWidth="773.0" style="-fx-background-color: #9f97bd;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField id="searchbox" layoutX="829.0" layoutY="11.0" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" opacity="0.9" prefHeight="26.0" prefWidth="369.0" promptText="Search for your hardware..." stylesheets="@../StyleSheets/UIstyling.css" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="11.0" />
+            <ImageView fitHeight="47.0" fitWidth="89.0" layoutX="514.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="530.0" AnchorPane.rightAnchor="603.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../Pictures/Logo.PNG" />
+               </image>
+               <effect>
+                  <Glow level="0.54" />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
-

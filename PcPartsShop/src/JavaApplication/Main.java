@@ -80,7 +80,7 @@ public void handle(MouseEvent event) {
 
 JavaApplication.loginController.getStage(signupStage,rootLogin);
 JavaApplication.signupController.setstage(loginStage,rootSignup);
-loginStage.show();
+//loginStage.show();
 homeStage.show();
 }
 

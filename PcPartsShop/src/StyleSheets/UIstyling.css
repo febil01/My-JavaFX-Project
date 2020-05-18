@@ -18,7 +18,13 @@
 -fx-border-width: 2px;
 -fx-border-color: #9f97bd;  
 }
-
+#searchbox
+{
+	-fx-background-color: #f3eff5;
+}
+#searchbox:focused{
+	-fx-border-color:#50546D;
+}
 .button
 {
  -fx-background-color:#50546D;

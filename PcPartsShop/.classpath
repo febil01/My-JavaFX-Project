@@ -12,7 +12,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX 14"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Program Files/mysql-connector-java-8.0.20/mysql-connector-java-8.0.20.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Ideapad/.p2/pool/plugins/org.eclipse.fx.ide.css.jfx8_3.5.0.201907240300.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/mysql-connector-java-8.0.19/mysql-connector-java-8.0.19.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Desktop/.p2/pool/plugins/org.eclipse.fx.ide.css.jfx8_3.5.0.201907240300.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
