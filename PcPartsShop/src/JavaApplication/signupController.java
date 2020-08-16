@@ -38,6 +38,7 @@ public class signupController implements Initializable {
 	String patternString="^[a-zA-Z0-9_]+[@]+[a-zA-Z]+[.]+[a-zA-Z]+$";
 	
 	Pattern p=Pattern.compile(patternString);
+
 	Boolean checknull=true,checkerror=false,checkemail=false,checkphone=false,checkpass=false,checkfname=false,checklname=false,checkadd;
 	Alert alert=new Alert(AlertType.NONE);
 	

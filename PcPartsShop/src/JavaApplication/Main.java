@@ -84,6 +84,6 @@ JavaApplication.loginController.getStage(signupStage,rootLogin);
 JavaApplication.signupController.setstage(loginStage,rootSignup);
 //loginStage.show();
 homeStage.show();
+//signupStage.show();
 }
-
 }
