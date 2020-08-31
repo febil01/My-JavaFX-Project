@@ -24,14 +24,17 @@ public void start(Stage stage) throws Exception{
 Parent rootLogin=FXMLLoader.load(getClass().getResource("/javaFXML/login.fxml"));
 Parent rootSignup=FXMLLoader.load(getClass().getResource("/javaFXML/signup.fxml"));
 Parent rootHome=FXMLLoader.load(getClass().getResource("/javaFXML/Home.fxml"));
+Parent desc=FXMLLoader.load(getClass().getResource("/javaFXML/ProductDescription.fxml"));
+
 
 Scene signup=new Scene(rootSignup);
 Scene login=new Scene(rootLogin);
 Scene home=new Scene(rootHome);
+Scene description=new Scene(desc);
 
 rootLogin.requestFocus();
 rootSignup.requestFocus();
-rootHome.requestFocus();
+//rootHome.requestFocus();
 
 Stage loginStage=new Stage();
 Stage signupStage=new Stage();
@@ -45,8 +48,8 @@ signupStage.setScene(signup);
 homeStage.setScene(home);
 
 homeStage.setMaximized(true);
-homeStage.setMinWidth(1200);
-homeStage.setMinHeight(900);
+//homeStage.setMinWidth(1200);
+//homeStage.setMinHeight(900);
 
 login.setOnMousePressed(new EventHandler<MouseEvent>() {
 @Override
