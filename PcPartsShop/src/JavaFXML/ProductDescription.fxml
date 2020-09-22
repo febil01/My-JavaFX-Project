@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="884.0" prefWidth="1227.0" style="-fx-background-color: pink;" stylesheets="@../StyleSheets/home.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaApplication.ProductDescriptionController">
+   <children>
+      <GridPane layoutY="47.0" AnchorPane.bottomAnchor="396.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="460.0" minWidth="10.0" prefWidth="384.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="822.0" minWidth="10.0" prefWidth="670.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="492.0" minHeight="10.0" prefHeight="492.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="image" fitHeight="350.0" fitWidth="332.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/sample%20UI.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <ImageView fitHeight="110.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+            <AnchorPane prefHeight="455.0" prefWidth="767.0" style="-fx-background-color: pink;" GridPane.columnIndex="1">
+               <children>
+                  <Label fx:id="product" layoutX="15.0" layoutY="130.0" opacity="0.85" prefHeight="70.0" prefWidth="614.0" text="Acer Predator XB241H bmipr 24inch Gaming Monitor ">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="47.0" fitWidth="72.0" layoutX="299.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Pictures/icons8-online-shopping-64.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="170.0" layoutX="128.0" layoutY="118.0" startX="-33.0" />
+                  <Line endX="174.0" layoutX="371.0" layoutY="119.0" startX="-24.0" />
+                  <Line endX="417.0" layoutX="128.0" layoutY="207.0" startX="-33.0" />
+                  <ImageView layoutX="293.0" layoutY="221.0">
+                     <image>
+                        <Image url="@../../../../../AppData/Local/Temp/icons8_lol_60px_3.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="15.0" layoutY="295.0" opacity="0.85" prefHeight="36.0" prefWidth="614.0" text="Thanks for shopping with us">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price" layoutX="223.0" layoutY="331.0" opacity="0.85" prefHeight="36.0" prefWidth="199.0" text="Rs. 32000">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="224.0" layoutY="380.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="199.0" text="Add to cart">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <StackPane layoutX="-51.0" layoutY="-37.0" prefHeight="47.0" prefWidth="1105.0" style="-fx-background-color: #9f97bd;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/Logo.PNG" />
+               </image>
+            </ImageView>
+            <Pane>
+               <children>
+                  <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="14.0" layoutY="6.0" onMousePressed="#previous">
+                     <image>
+                        <Image url="@../../../../../AppData/Local/Temp/icons8_back_arrow_48px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+         <effect>
+            <Glow level="0.16" />
+         </effect>
+      </StackPane>
+      <TextArea fx:id="description" layoutX="7.0" layoutY="661.0" prefHeight="170.0" prefWidth="1054.0" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="661.0" />
+   </children>
+</AnchorPane>
