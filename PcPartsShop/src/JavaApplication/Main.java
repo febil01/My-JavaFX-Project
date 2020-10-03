@@ -1,5 +1,6 @@
 package JavaApplication;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,13 +20,10 @@ public class Main extends Application{
 	
 @Override
 public void start(Stage stage) throws Exception{
-
-    
 Parent rootLogin=FXMLLoader.load(getClass().getResource("/javaFXML/login.fxml"));
 Parent rootSignup=FXMLLoader.load(getClass().getResource("/javaFXML/signup.fxml"));
 Parent rootHome=FXMLLoader.load(getClass().getResource("/javaFXML/Home.fxml"));
 Parent desc=FXMLLoader.load(getClass().getResource("/javaFXML/ProductDescription.fxml"));
-
 
 Scene signup=new Scene(rootSignup);
 Scene login=new Scene(rootLogin);

@@ -1,0 +1,72 @@
+.text-field
+{
+	-fx-background-color:#ffffff;
+	-fx-text-fill: white;
+}
+.text-field:focused
+{
+-fx-border-width:2px;
+-fx-border-color:#9f97bd;  
+}
+.text-field:pressed
+{
+-fx-border-width:2px;
+-fx-border-color: #9f97bd;  
+}
+
+.password-field:focused
+{
+-fx-border-width: 2px;
+-fx-border-color: #9f97bd;  
+}
+#searchbox
+{
+	-fx-background-color: #f1eff5;
+	-fx-prompt-text-fill: grey
+}
+#searchbox:focused{
+	-fx-border-width: 1px;
+	-fx-border-color:#5f456e;
+}
+.button
+{
+ -fx-background-color:#50546D;
+ -fx-border-color:#404354;
+ -fx-focus-color:#0C39FF;
+}
+
+.button:hover
+{
+-fx-background-color: black	
+}
+#lblclose
+{
+	-fx-text-fill: #50546D;
+}
+#lblclose:hover
+{
+	-fx-text-fill: red;
+}
+.text-area
+{
+-fx-background-color: #fff, #fff;
+}
+
+.text-area .content 
+{
+-fx-background-color: #fff;
+}
+
+.text-area:focused 
+{
+-fx-border-width: 2px;
+-fx-border-color: #9f97bd;
+}
+#lblerror
+{
+   -fx-text-fill: red;	
+}
+#lblclose:hover
+{
+	-fx-text-fill:red;
+}

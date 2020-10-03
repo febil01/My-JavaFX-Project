@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="731.0" prefWidth="1027.0" style="-fx-background-color: #f3eff5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaApplication.HomeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="731.0" prefWidth="1027.0" style="-fx-background-color: #f3eff5;" stylesheets="@../StyleSheets/UIstyling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaApplication.HomeController">
    <children>
       <StackPane prefHeight="47.0" prefWidth="813.0" style="-fx-background-color: #9f97bd;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -29,29 +29,29 @@
       </StackPane>
       <AnchorPane layoutX="607.0" layoutY="-1.0" prefHeight="47.0" prefWidth="813.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="747.0" layoutY="9.0" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="9.0">
+            <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="736.0" layoutY="8.0" onMouseClicked="#showcart" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="261.0" AnchorPane.topAnchor="8.0">
                <image>
                   <Image url="@../Pictures/shopping_cart_30px.png" />
                </image>
             </ImageView>
             <ComboBox fx:id="comboC" layoutX="801.0" layoutY="8.0" prefHeight="29.0" prefWidth="231.0" promptText="Choose category" style="-fx-background-color: #f1eff5;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="8.0" />
-            <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="711.0" layoutY="8.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="286.0" AnchorPane.topAnchor="8.0">
+            <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="700.0" layoutY="8.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="297.0" AnchorPane.topAnchor="8.0">
                <image>
                   <Image url="@../Pictures/male_user_50px.png" />
                </image>
             </ImageView>
-            <Label alignment="CENTER" layoutX="755.0" layoutY="13.0" prefHeight="20.0" prefWidth="21.0" text="0" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="253.0" AnchorPane.topAnchor="13.0">
+            <TextField fx:id="searchbox" layoutX="14.0" layoutY="10.0" onKeyPressed="#searchString" prefHeight="26.0" prefWidth="250.0" promptText="Search for hardware" style="-fx-background-color: #f1eff5;" />
+            <Label fx:id="cartcounter" layoutX="751.0" layoutY="1.0" prefHeight="15.0" prefWidth="16.0" text="0" textAlignment="CENTER" AnchorPane.bottomAnchor="32.0" AnchorPane.rightAnchor="262.0" AnchorPane.topAnchor="1.0">
                <font>
                   <Font name="System Bold" size="10.0" />
                </font></Label>
-            <TextField fx:id="searchbox" layoutX="14.0" layoutY="10.0" onKeyPressed="#searchString" prefHeight="26.0" prefWidth="250.0" promptText="Search for hardware" style="-fx-background-color: #f1eff5;" />
          </children>
       </AnchorPane>
       <ScrollPane fitToWidth="true" layoutY="47.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
         <content>
           <AnchorPane>
                <children>
-                  <GridPane fx:id="gridHome" prefHeight="684.0" prefWidth="1015.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <GridPane fx:id="gridHome" prefHeight="684.0" prefWidth="1015.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

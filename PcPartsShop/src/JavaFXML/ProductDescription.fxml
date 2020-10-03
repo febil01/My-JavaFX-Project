@@ -51,9 +51,9 @@
                   <Line endX="170.0" layoutX="128.0" layoutY="118.0" startX="-33.0" />
                   <Line endX="174.0" layoutX="371.0" layoutY="119.0" startX="-24.0" />
                   <Line endX="417.0" layoutX="128.0" layoutY="207.0" startX="-33.0" />
-                  <ImageView layoutX="293.0" layoutY="221.0">
+                  <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="300.0" layoutY="221.0">
                      <image>
-                        <Image url="@../../../../../AppData/Local/Temp/icons8_lol_60px_3.png" />
+                        <Image url="@../Pictures/add_shopping_cart_96px.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="15.0" layoutY="295.0" opacity="0.85" prefHeight="36.0" prefWidth="614.0" text="Thanks for shopping with us">
@@ -66,7 +66,7 @@
                         <Font name="System Bold Italic" size="18.0" />
                      </font>
                   </Label>
-                  <Button layoutX="224.0" layoutY="380.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="199.0" text="Add to cart">
+                  <Button fx:id="addcart" layoutX="224.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#updatecart" prefHeight="47.0" prefWidth="199.0" text="Add to cart">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -84,9 +84,9 @@
             </ImageView>
             <Pane>
                <children>
-                  <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="14.0" layoutY="6.0" onMousePressed="#previous">
+                  <ImageView fitHeight="36.0" fitWidth="38.0" layoutX="14.0" layoutY="6.0" onMouseClicked="#previous">
                      <image>
-                        <Image url="@../../../../../AppData/Local/Temp/icons8_back_arrow_48px.png" />
+                        <Image url="@../Pictures/icons8_go_back_48px_2.png" />
                      </image>
                   </ImageView>
                </children>

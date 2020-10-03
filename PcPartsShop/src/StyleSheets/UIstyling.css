@@ -1,7 +1,10 @@
 .text-field
 {
 	-fx-background-color:#ffffff;
+	-fx-border-width: 1px;
+	-fx-border-color: black;
 }
+
 .text-field:focused
 {
 -fx-border-width:2px;
@@ -12,7 +15,9 @@
 -fx-border-width:2px;
 -fx-border-color: #9f97bd;  
 }
-
+#gridhome{
+	-fx-background-color: white;
+}
 .password-field:focused
 {
 -fx-border-width: 2px;
@@ -30,13 +35,18 @@
 .button
 {
  -fx-background-color:#50546D;
+ -fx-text-fill: white;
  -fx-border-color:#404354;
  -fx-focus-color:#0C39FF;
 }
 
+.button:pressed{
+	-fx-text-fill: black;
+}
+
 .button:hover
 {
--fx-background-color: #0C39FF	
+-fx-background-color: black	
 }
 #lblclose
 {
