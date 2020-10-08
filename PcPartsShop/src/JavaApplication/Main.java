@@ -1,6 +1,5 @@
 package JavaApplication;
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -28,8 +27,6 @@ Parent desc=FXMLLoader.load(getClass().getResource("/javaFXML/ProductDescription
 Scene signup=new Scene(rootSignup);
 Scene login=new Scene(rootLogin);
 Scene home=new Scene(rootHome);
-Scene description=new Scene(desc);
-
 rootLogin.requestFocus();
 rootSignup.requestFocus();
 //rootHome.requestFocus();
@@ -46,8 +43,6 @@ signupStage.setScene(signup);
 homeStage.setScene(home);
 
 homeStage.setMaximized(true);
-//homeStage.setMinWidth(1200);
-//homeStage.setMinHeight(900);
 
 login.setOnMousePressed(new EventHandler<MouseEvent>() {
 @Override
@@ -83,8 +78,8 @@ public void handle(MouseEvent event) {
 
 JavaApplication.loginController.getStage(signupStage,rootLogin);
 JavaApplication.signupController.setstage(loginStage,rootSignup);
-//loginStage.show();
+loginStage.show();
 homeStage.show();
-//signupStage.show();
+signupStage.show();
 }
 }

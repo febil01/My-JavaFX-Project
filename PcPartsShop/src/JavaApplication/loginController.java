@@ -5,14 +5,13 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
-
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -33,16 +32,11 @@ private TextField txtemail,txtpassword;
 @FXML
 private Label lblerror;
 
-public void dbsignin(MouseEvent event)
-{
-if(event.getButton()==MouseButton.PRIMARY)
-{
-dbsignin();
-}
-}
 
-public void dbsignin()
-{
+
+@FXML
+public void dbsignin(MouseEvent event)
+{	
 	signuproot.requestFocus();
 	String url="jdbc:mysql://localhost:3306/pcshop";
 	String user="root";
@@ -51,13 +45,24 @@ public void dbsignin()
 	{
 	    Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection con =DriverManager.getConnection(url, user, password);
-		PreparedStatement pr=con.prepareStatement("SELECT * FROM userinfo WHERE Email=? AND Password=?");
+		PreparedStatement pr=con.prepareStatement("SELECT uid FROM userinfo WHERE Email=? AND Password=?");
 		pr.setString(1, txtemail.getText());
 		pr.setString(2, txtpassword.getText());
+		
 		ResultSet rs=pr.executeQuery();
 		if(rs.next())
-		{
-			System.out.println("Valid User");
+		{	  FXMLLoader loader=new FXMLLoader(getClass().getClassLoader().getResource("javaFXML/Home.fxml"));
+		      Parent root=(Parent) loader.load();
+			   HomeController home=loader.<HomeController>getController();
+			   int id=rs.getInt("uid");
+			   home.getid(id);
+	          Scene scene = new Scene(root);
+	          Stage homestage=new Stage(); 
+	          homestage.setScene(scene);
+	          homestage.setMaximized(true);
+	          Stage exit=(Stage) login.getScene().getWindow();
+	          exit.close();
+	          homestage.show();
 		}
 		else
 		{
@@ -89,13 +94,6 @@ public void ButtonClose(MouseEvent event) {
 	}
 }
 
-public void enter(KeyEvent event)
-{
-	if(event.getCode()==KeyCode.ENTER)
-	{
-		dbsignin();
-	}
-}
 public void Buttonsignup(MouseEvent event)
 {
 	login.requestFocus();

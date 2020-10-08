@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="231.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+   <children>
+      <TilePane prefHeight="200.0" prefWidth="260.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="61.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/male_user_50px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblname" prefHeight="26.0" prefWidth="119.0" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: black;" text="sign out" textFill="WHITE" />
+         </children>
+      </TilePane>
+   </children>
+</AnchorPane>

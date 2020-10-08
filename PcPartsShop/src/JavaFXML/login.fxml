@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="login" onKeyPressed="#enter" prefHeight="525.0" prefWidth="867.0" style="-fx-background-color: #9f97bd;" stylesheets="@../StyleSheets/UIstyling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaApplication.loginController">
+<AnchorPane fx:id="login" prefHeight="525.0" prefWidth="867.0" style="-fx-background-color: #9f97bd;" stylesheets="@../StyleSheets/UIstyling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaApplication.loginController">
    <children>
       <AnchorPane layoutX="402.0" prefHeight="525.0" prefWidth="465.0" style="-fx-background-color: #f3eff5;">
          <children>
@@ -26,7 +26,6 @@
             <TextField fx:id="txtemail" layoutX="66.0" layoutY="156.0" onMouseClicked="#reseterror" prefHeight="35.0" prefWidth="325.0" promptText="Enter your email" stylesheets="@../StyleSheets/UIstyling.css" />
             <PasswordField fx:id="txtpassword" layoutX="66.0" layoutY="228.0" onMouseClicked="#reseterror" prefHeight="35.0" prefWidth="325.0" promptText="Enter your password" stylesheets="@../StyleSheets/UIstyling.css" />
             <Button layoutX="157.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#dbsignin" prefHeight="35.0" prefWidth="147.0" stylesheets="@../StyleSheets/UIstyling.css" text="Sign in" textFill="WHITE" />
-            <Button layoutX="101.0" layoutY="406.0" mnemonicParsing="false" onMousePressed="#Buttonsignup" prefHeight="35.0" prefWidth="259.0" stylesheets="@../StyleSheets/UIstyling.css" text="Don't have an account? Sign up now" textAlignment="CENTER" textFill="WHITE" />
             <Line endX="52.0" endY="-21.0" layoutX="151.0" layoutY="56.0" opacity="0.38" startX="-99.5" startY="-21.0" />
             <Line endX="262.0" endY="-21.0" layoutX="143.0" layoutY="393.0" opacity="0.38" startX="-92.0" startY="-21.0" />
             <Line endX="26.0" endY="-20.0" layoutX="364.0" layoutY="55.0" opacity="0.38" startX="-108.0" startY="-20.0" />
@@ -40,6 +39,7 @@
                   <Font size="10.0" />
                </font>
             </Label>
+            <Button layoutX="103.0" layoutY="406.0" mnemonicParsing="false" onMouseClicked="#Buttonsignup" prefHeight="35.0" prefWidth="259.0" stylesheets="@../StyleSheets/UIstyling.css" text="Don't have an account? Sign up now" textFill="WHITE" />
          </children>
       </AnchorPane>
       <ImageView fitHeight="259.0" fitWidth="415.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">

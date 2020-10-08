@@ -2,18 +2,28 @@
 {
 	-fx-background-color:#ffffff;
 	-fx-border-width: 1px;
-	-fx-border-color: black;
+	-fx-border-color: #9f97bd;
+}
+.text-area{
+	-fx-border-color:#9f97bd;
+	-fx-background-color: red;
 }
 
 .text-field:focused
 {
 -fx-border-width:2px;
--fx-border-color:#9f97bd;  
+-fx-border-color:black;  
 }
-.text-field:pressed
+
+
+#lblname{
+	-fx-text-fill: blue;
+	-fx-alignment: center;
+}
+
+#lblprice
 {
--fx-border-width:2px;
--fx-border-color: #9f97bd;  
+	-fx-text-fill: purple;
 }
 #gridhome{
 	-fx-background-color: white;
@@ -34,19 +44,14 @@
 }
 .button
 {
- -fx-background-color:#50546D;
+ -fx-background-color:  #2d283e;
  -fx-text-fill: white;
- -fx-border-color:#404354;
- -fx-focus-color:#0C39FF;
-}
-
-.button:pressed{
-	-fx-text-fill: black;
+ -fx-text-alignment: center;
 }
 
 .button:hover
 {
--fx-background-color: black	
+-fx-background-color: #000000;
 }
 #lblclose
 {
@@ -78,4 +83,10 @@
 #lblclose:hover
 {
 	-fx-text-fill:red;
+}
+lblqty{
+	-fx-border-width: 0px;
+}
+#cart{
+	
 }

@@ -161,9 +161,10 @@ public class signupController implements Initializable {
 			}
 		}
 		
+		
 		checkerror=(checkemail & checkphone & checkpass & checkfname & checklname) ? true : false;
 	}
-	
+		
 	public static void setstage(Stage stage,Parent parent) {
 	signin=stage;	
 	signinroot=parent;
@@ -176,8 +177,9 @@ public class signupController implements Initializable {
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con=DriverManager.getConnection(url, user, password);			
-			PreparedStatement pr=con.prepareStatement("INSERT INTO userinfo(Email,Password,First_Name,Last_Name,Address,Phone_No) values(?,?,?,?,?,?)");
+			Connection con=DriverManager.getConnection(url, user, password);
+			PreparedStatement pr;
+			pr=con.prepareStatement("INSERT INTO userinfo(Email,Password,First_Name,Last_Name,Address,phone) values(?,?,?,?,?,?)");
 			pr.setString(1, txtemail.getText());
 			pr.setString(2, txtpass.getText());
 			pr.setString(3, txtfname.getText());
@@ -186,17 +188,16 @@ public class signupController implements Initializable {
 			pr.setString(6, txtphone.getText());
 			int noerror=pr.executeUpdate();
 			if(noerror!=0) {
-				System.out.println("Updated Sucessfully");
+				Alert a=new Alert(AlertType.CONFIRMATION);
+				a.setContentText("Updated succesfully");
+				a.show();
 			}
-			else {
-				
-				System.out.println("Failed to Update");
-			}
+
 		}
 		catch(Exception e) {
 			alert.setAlertType(AlertType.ERROR);
-			alert.setTitle("Connection to database failed");
-			alert.setContentText(""+e);
+			alert.setTitle("An error has occured");
+			alert.setContentText("Email already exists");
 			alert.show();
 		}
 	}
@@ -209,7 +210,9 @@ public class signupController implements Initializable {
 			return;
 		}
 		else {
-			System.out.println("error here "+checkerror+" "+checknull);
+			alert.setAlertType(AlertType.ERROR);
+			alert.setTitle("Enter details");
+			alert.show();
 		}
 		checknull=true;
 		checkerror=false;

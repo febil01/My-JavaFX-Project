@@ -43,8 +43,7 @@ Parent p;
 int count=0;
 ArrayList<String> scart=new ArrayList<String>();
 
-public void set(String data,ArrayList<String> scart) {
-	this.scart=scart;
+public void set(String data) {
 	item=data;
 	try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
@@ -65,27 +64,11 @@ public void set(String data,ArrayList<String> scart) {
 	}
 }
 
-public ArrayList<String> returncart(){
-	for(int i=0;i<scart.size();i++) {
-		if(scart.get(i).equals(product.getText())) {
-			Double temp=count+Double.parseDouble(scart.get(i+1));
-			scart.set(i+1,""+temp);
-		}		
-	}
-	return this.scart;
-}
 
 @FXML
 public void updatecart(MouseEvent event){
 count++;
 }
-
-public void previous(MouseEvent event) {
-	Stage stage=(Stage) apane.getScene().getWindow();
-	stage.close();
-
-}
-
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {				
 		description.setEditable(false);
