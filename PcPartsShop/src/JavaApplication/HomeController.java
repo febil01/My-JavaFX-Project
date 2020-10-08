@@ -219,10 +219,16 @@ import javafx.stage.WindowEvent;
 					VBox vbox[]=new VBox[length];
 			        int rowCount=this.length/5,columnCount=5;
 					this.k=0;
-					for(int i=0;i<rowCount;i++)
+					gridHome.setMaxSize(this.length, this.length);
+					System.out.println(rowCount);
+					System.out.println(this.length);
+					for(int i=0;i<=rowCount;i++)
 					{
 						for(int j=0;j<columnCount;j++)
 						{
+							if(k==this.length) {
+								return;
+							}
 							spane[k]=new StackPane();
 							
 							vbox[k]=new VBox();				
